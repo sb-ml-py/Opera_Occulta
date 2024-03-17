@@ -8,7 +8,7 @@
 	html * {
 		line-height: 1.625;
 		color: #ffffff;
-		font-family: sans-serif;
+		font-family: serif;
 	}
 
 	img {
@@ -25,11 +25,11 @@
 	  box-sizing: border-box;
 	}
 
-	/* Create four equal columns that floats next to each other */
+	/* Create five equal columns that float next to each other */
 	.column {
 	  float: left;
-	  width: 25%;
-	  padding: 10px;
+	  width: 20%;
+	  padding: 20px;
 	}
 
 	/* Clear floats after the columns */
@@ -40,6 +40,10 @@
 	}
 
 	/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 1000px) {
+	  .column {
+		width: 50%;
+	  }
 	@media screen and (max-width: 600px) {
 	  .column {
 		width: 100%;
@@ -50,16 +54,60 @@
 </head>
 
 <body style="background-color: #000000;">
-  <img src="images/Gothica.png" class="center" width="1200" height="400">
-  
-  	<br><br><hr>
-		<p>Document last modified:</p>
-		<p id="lastModified"></p>
+	<img src="images/Gothica.png" class="center" width="1200" height="400">
+	<h1 style="text-align: center; font-size: 300%;">Gothica</h1>
+	<br><br>
+	
+	<p style="text-align: center;">
+	Gothica is a world of dark magic. 
+	The forces of evil forever threaten to overcome the people who dwell within. 
+	The noble must labor always under the shadow of doom to create what little good they can, while they can.
+	</p>
+	<br><br>
+	
+	<div class="row"> <!-- Navigation -->
+		<div class="column" style="text-align: center;">
+			<img src="images/Atlas.png" class="center" width="200" height="200">
+			<a href="Atlas" class="a" style="font-size: 150%; font-weight: bold;">Atlas</a>
+			
+		</div>
+		<div class="column" style="text-align: center;">
+			<img src="images/History.png" class="center" width="200" height="200">
+			<a href="History" class="a" style="font-size: 150%; font-weight: bold;">History</a>
+			
+		</div>
+		<div class="column" style="text-align: center;">
+			<img src="images/Religion.png" class="center" width="200" height="200">
+			<a href="Religion" class="a" style="font-size: 150%; font-weight: bold;">Religion</a>
+			
+		</div>
+		<div class="column" style="text-align: center;">
+			<img src="images/Science.png" class="center" width="200" height="200">
+			<a href="Science" class="a" style="font-size: 150%; font-weight: bold;">Science</a>
+			
+		</div>
+		<div class="column" style="text-align: center;">
+			<img src="images/Stories.png" class="center" width="200" height="200">
+			<a href="Stories" class="a" style="font-size: 150%; font-weight: bold;">Stories</a>
+			
+		</div>
+	</div>
+	
+	<h2 style="text-align: center;">Featured Articles</h2>
+	<p style="text-align: center;">
+	<a href="Paleogothic" class="a">Paleogothic</a><br>
+	<a href="Meta" class="a">Meta</a><br>
+	</p>
+	
+	<footer>
+		<br><br><hr>
+		<p>Document last modified: <span id="lastModified"></span></p>
 
 		<script>
 		let text = document.lastModified;
 		document.getElementById("lastModified").innerHTML = text;
 		</script>
+	</footer>
 </body>
 
 </html>
