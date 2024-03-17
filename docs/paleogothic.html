@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Paleogothic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	html * {
+		line-height: 1.625;
+		color: #ffffff;
+		font-family: serif;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.a {
+		color: #971717
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Create five equal columns that float next to each other */
+	.column {
+	  float: left;
+	  width: 20%;
+	  padding: 20px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 1000px) {
+	  .column {
+		width: 50%;
+	  }
+	@media screen and (max-width: 600px) {
+	  .column {
+		width: 100%;
+	  }
+	}
+
+	</style>
+</head>
+
+<body style="background-color: #000000;">
+	<img src="images/Paleogothic.png" class="center" width="1200" height="400">
+	<h1 style="text-align: center; font-size: 300%;">Paleogothic</h1>
+	
+	<p style="text-align: center;">
+	Return to homepage: <a href="index.html" class="a">Gothica</a>
+	</p>
+	<br><br>
+	
+	<p>
+	Long before the ages of man, giant lizards roamed Gothica. 
+	Their reign was characterized by successive cataclysms. 
+	In that time, just as the flora and fauna were chaotic, so too was the geology. 
+	Earthquakes, volcanic eruptions, meteors, droughts, and monsoons were frequently seen on a catastrophic and global scale. 
+	Many times the lizards reached their peak and many times again were they wiped from existence. 
+	Yet, life recovers, and again they reigned, and again were destroyed. 
+	Theirs was an existence characterized by the immeasurable expanse of time and by the doom that always hung over them. 
+	Some say the remnants of these ancient lizards survive to this day in caverns deep beneath the ground.
+	</p>
+	
+	<footer>
+		<br><br><hr>
+		<p>Document last modified: <span id="lastModified"></span></p>
+
+		<script>
+		let text = document.lastModified;
+		document.getElementById("lastModified").innerHTML = text;
+		</script>
+	</footer>
+</body>
+
+</html>
