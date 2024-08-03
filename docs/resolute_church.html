@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	html * {
+		line-height: 1.625;
+		color: #ffffff;
+		font-family: serif;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.a {
+		color: #971717
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Create five equal columns that float next to each other */
+	.column {
+	  float: left;
+	  width: 20%;
+	  padding: 20px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 1000px) {
+	  .column {
+		width: 50%;
+	  }
+	@media screen and (max-width: 600px) {
+	  .column {
+		width: 100%;
+	  }
+	}
+
+	</style>
+</head>
+
+<body style="background-color: #000000;">
+	<img src="images/Hamaraz.png" class="center" width="1200" height="400">
+	<p style="text-align: center;">
+	Return to homepage: <a href="index.html" class="a">Hamaraz</a>
+	</p>
+	<br><br>
+	
+	<h1 style="text-align: center; font-size: 300%;">Creed of the Resolute</h1>
+	<h3 style="text-align: center;">Approved by the Council of Calgoan, AS 226</h3>
+	<br><br>
+	
+			<p>
+			Reisolus is Lord and creator of all things.<br>
+			There are no gods such as he.<br>
+			Borello, Faveza, Libernio, and Aphelia serve Reisolus.<br>
+			The saints serve Reisolus.<br>
+			It is right to serve Reisolus.<br>
+			</p>
+			
+			<p>
+			Those who serve Reisolus will in death be granted entry into Heaven.<br>
+			Entry is granted when service to Reisolus is complete.
+			Those who serve only themselves will in death serve Shadoun.<br>
+			On the last day Reisolus will open the gates of Hell and judge the souls who toil there.<br>
+			Reisolus is merciful and some lost souls may yet be granted entry into heaven on that day.<br>
+			We should pray for Reisolus' mercy for we are all sinners.<br>
+			</p>
+			
+			<p>
+			Reisolus grants forgiveness to those who atone for their sins.<br>
+			When atonement cannot be given, blood of the innocent must be sacrificed.<br>
+			The sacrifice must be made by the sinner or by a priest.<br>
+			It is right to make sacrifices to Reisolus.<br>
+			</p>
+		
+	<footer>
+		<br><br><hr>
+		<p>Document last modified: <span id="lastModified"></span></p>
+
+		<script>
+		let text = document.lastModified;
+		document.getElementById("lastModified").innerHTML = text;
+		</script>
+	</footer>
+</body>
+
+</html>
